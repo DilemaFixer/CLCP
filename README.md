@@ -1,1 +1,1 @@
-# CLCP
+# CLCP (C Logger Code Preparation)
