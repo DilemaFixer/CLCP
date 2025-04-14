@@ -13,6 +13,7 @@
 ## Code
 
 ```c
+// --------------- CLCP ---------------
 typedef enum {
     LEVEL_FATAL = 0,
     LEVEL_WARN  = 1,
@@ -45,4 +46,6 @@ static inline void lmessage(LogLevel level, const char* format, ...) {
 #define ldebug(...) lmessage(LEVEL_DEBUG, __VA_ARGS__)
 #define ltodo(...)  lmessage(LEVEL_TODO, __VA_ARGS__)
 #define lunimp(...) lmessage(LEVEL_UNIMPLEMENTED, "Not implemented: " __VA_ARGS__)
+//------------------------------
+
 ```
